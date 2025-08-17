@@ -1,15 +1,19 @@
-﻿# ================================
+# ================================
 # Windows Media Player で MP3 を再生
 # ================================
 
-# Windows Media Player のパス
+# --- 設定項目 ---
+# 再生したい音楽ファイルのパスをここに指定してください。
+$musicFile = "C:\パス\to\あなたの\音楽ファイル.mp3"
+
+# 再生したい時間を秒単位で指定してください。
+# 例：5分30秒の場合は「330」と入力
+$playTimeSeconds = 300
+# --- 設定項目ここまで ---
+
+
+# Windows Media Player のパス（通常は変更不要）
 $wmpPath = "C:\Program Files (x86)\Windows Media Player\wmplayer.exe"
-
-# 再生する音楽ファイルのパス
-$musicFile = "C:\Users\Masaaki\Music\HY - AM11_00 (Official Music Video).mp3"
-
-# 再生時間（秒）
-$playTimeSeconds = 325
 
 # WMP を起動して MP3 を再生
 Write-Host "Windows Media Player で音楽を再生します..."
